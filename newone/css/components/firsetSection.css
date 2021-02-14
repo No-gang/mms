@@ -1,0 +1,60 @@
+.firstSection{
+     width: 100%;
+     height: 60vh;
+     display: flex;
+     transition: opacity 1s;
+     opacity: 1;
+     position: relative;
+}
+
+.firstSection .fadeArticle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 1.5s;
+}
+
+.firstSection .leftFadeArticle{
+    justify-content: flex-end;
+    transform: translate(-150px);
+    background-color: red;
+}
+
+.firstSection .rightFadeArticle{
+    justify-content: flex-start;
+    transform: translate(150px);
+    background-color: white;
+}
+
+.fadeBoxes {
+    width: 70%;
+    min-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+.leftFadeBox {
+    color: white;
+}
+.rightFadeBox{
+    color: red;
+}
+
+.rightFadeBox form{
+    border: 3px solid red;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightFadeBox form select{
+    width: 150px;
+}
+
+.boxFormElement{
+    margin: 5px;
+    font-size: 1.5rem;
+}

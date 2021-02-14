@@ -1,0 +1,33 @@
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    background-color: red;
+}
+
+.headerSlider {
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0%;
+    transition: left 0.5s;
+}
+
+.headerSlider div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.BannerBtnLeft, .BannerBtnRight {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+    position: absolute;
+    bottom: 3%;
+}
