@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap);
+.dragAnimationSection {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../media/image/bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+.dragAnimationSection .dragtext {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-weight: 900;
+    text-align: center;
+}
+.dragAnimationSection .dragtext h1 {
+    font-size: 3em;
+    letter-spacing: 5px;
+}
+.dragAnimationSection .dragContainer {
+    width: 95%;
+    height: 370px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    padding: 10px;
+    mix-blend-mode: darken;
+}
+.dragAnimationSection .dragslide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.dragAnimationSection .dragslide .dragbox {
+    min-width: 260px;
+    margin: 0 15px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 5px 2px #0003;
+    border-radius: 2px;
+}
+.dragAnimationSection .dragbox .dragdetail {
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 120%;
+    text-shadow: -2px 2px 8px #888;
+    pointer-events: none;
+}
+.dragAnimationSection .dragbox img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+@media (max-height : 600px) {
+    .text {
+        top: 75%;
+    }
+    .container {
+        mix-blend-mode: normal;
+    }
+}
